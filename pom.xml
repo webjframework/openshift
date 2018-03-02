@@ -19,12 +19,11 @@
       <version>3.1.0</version>
     </dependency>
   </dependencies>  
+         
 <build>
-    
-    
     <plugins>
              
- <plugin>
+         <plugin>
             <artifactId>maven-antrun-plugin</artifactId>
             <version>1.8</version>
             <executions>
@@ -35,8 +34,8 @@
                         <target>
                             <echo>ANT TASK - copying files....</echo>
                             <copy todir=">${project.build.directory}/" overwrite="true" flatten="true">
-                                <fileset dir="${basedir}/deployments/" includes="*.ifi" >
-                                    <include name="*.ifi" />
+                                <fileset dir="${basedir}/deployments/" includes="*.ini" >
+                                    <include name="*.ini" />
                                     <include name="ReadME.*" />
                                 </fileset>
                             </copy>
@@ -48,31 +47,8 @@
                     </goals>
                 </execution>
             </executions>
-        </plugin>             
-             
+         </plugin>             
             
-             
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <version>3.0.2</version>
-             <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals><goal>copy</goal></goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                                <groupId>com.github.jsimone</groupId>
-                                <artifactId>webapp-runner</artifactId>
-                                <version>8.5.28.0</version>
-                                <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
     </plugins>
 </build>
 </project>
