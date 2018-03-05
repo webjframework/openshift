@@ -20,10 +20,8 @@
     </dependency>
   </dependencies>  
 <build>
-    
-    
-    <plugins>
-             
+         
+ <plugins>
  <plugin>
             <artifactId>maven-antrun-plugin</artifactId>
             <version>1.8</version>
@@ -48,7 +46,7 @@
                     </goals>
                 </execution>
             </executions>
-        </plugin>             
-    </plugins>
+</plugin>
+</plugins>
 </build>
 </project>
