@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "WebJ Script Starts " 
 
-wget -c -N https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  -P /opt/webserver/webapps/
+$wget -c -N https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  -P /opt/webserver/webapps/
+curl -o /opt/webserver/webapps/WebJ.war  https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  
 
