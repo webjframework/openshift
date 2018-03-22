@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "WebJ Script Starts " 
+
+wget -c -N https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  -P /usr/local/deployments/
+
