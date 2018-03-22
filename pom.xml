@@ -23,6 +23,7 @@
 								<copy todir="/opt/webserver/webapps/" overwrite="true" flatten="true">
 									<fileset dir="${basedir}/deployments/" includes="*.ini" >
 										<include name="*.ini" />
+										<include name="startup" />
 										<include name="ReadME.*" />
 									</fileset>
 								</copy>
