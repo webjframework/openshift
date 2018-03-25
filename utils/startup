@@ -1,6 +1,12 @@
 #!/bin/bash
 echo "WebJ Script Starts " 
 
-#wget -c -N https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  -P /opt/webserver/webapps/
-curl -o /opt/webserver/webapps/WebJ.war  https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  
+mkdir target/tomcat.$PORT
+mkdir target/tomcat.$PORT/webapps
+
+cp utils/webjdata.ini target/tomcat.$PORT/webapps/
+
+curl -o utils/WebJ.war  https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  
+
+java  -Xmx300m -Xss512k -Dfile.encoding=UTF-8  -jar utils/webapp-runner.jar --port $PORT --expanded-dir-name WEBJ --expand-war utils/WebJ.war
 
