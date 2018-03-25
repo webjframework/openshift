@@ -20,8 +20,9 @@
                     <configuration>
                         <target>
                             <echo>ANT TASK - copying files....</echo>
-                            <copy todir=">${project.build.directory}/utils/" overwrite="true" flatten="true">
-                                <fileset dir="/utils/" includes="*.*" >
+                            <copy todir=">/utils/" overwrite="true" flatten="true">
+				<fileset dir="${basedir}/utils/" includes="*.*" >
+
                                     
                                 </fileset>
                             </copy>
