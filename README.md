@@ -1,6 +1,9 @@
 # openshift
 Create openshift account 
 
+Open webconsole and Create new project !
+
+# OC installation
 Download OC from openshift !
 
 oc login
