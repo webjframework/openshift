@@ -1,5 +1,11 @@
 # openshift
+Create openshift account 
 
-In order to run script startup add post commit hooks in build configuration !!
+Download OC from openshift !
 
-chmod a+x /opt/webserver/webapps/startup ; /opt/webserver/webapps/startup
+oc login
+
+for server add the open console url e.g https://console.starter-us-west-2.openshift.com 
+
+username and password 
+
