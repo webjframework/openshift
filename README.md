@@ -3,15 +3,13 @@ Create openshift account
 
 Open web console and Create new project !
 
-# OC installation and use
-Download OC from openshift !
 
-oc login
+fork openshift-pom
 
-for server add the web console url e.g https://console.starter-us-west-2.openshift.com 
+add to deployments WebJ.war and change your webjdata.ini
 
-username and password 
+add persistent storage /MYPERSDATA
+Deploy
 
-oc project projectname
 
 
