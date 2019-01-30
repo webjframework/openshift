@@ -4,7 +4,7 @@ echo "WebJ Script Starts "
 mkdir target/tomcat.$PORT
 mkdir target/tomcat.$PORT/webapps
 
-cp utils/webjdata.ini target/tomcat.$PORT/webapps/
+cp utils/*.ini target/tomcat.$PORT/webapps/
 
 curl -o utils/WebJ.war  https://raw.githubusercontent.com/webjframework/webj/master/WebJ.war  
 
